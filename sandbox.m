@@ -1,3 +1,8 @@
+import autogen_func.swing_model
+import autogen_func.impact_model
+import autogen_func.hzd_LgLfy
+import autogen_func.hzd_Lf2y
+import autogen_func.fc_LgLfy
 f = figure();
 % curr_x = [-pi/8; pi/8; pi/6; 0.94; -0.28; 2.04];
 curr_x = [pi/8, -pi/8, pi/6, 1.6, -1.6, 0];

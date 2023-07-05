@@ -1,4 +1,6 @@
-function [] = demo_script(controller, savevideo)
+close all;clc;
+demo_script_(1,1)
+function [] = demo_script_(controller, savevideo)
     import autogen_func.impact_model
     import autogen_func.swing_model
     if controller == 3
@@ -134,10 +136,10 @@ end
 function [frames] = simulate(y, stance_leg_end)
     iter = 1;
     frames = [];
-%     for a = y'
-%         qe = [a(1:3); stance_leg_end(1); stance_leg_end(2)];
-%         frames(iter) = draw_robot(qe);
-%         iter = iter + 1;
-%         pause(0.0001);
-%     end
+    for a = y'
+        qe = [a(1:3); stance_leg_end(1); stance_leg_end(2)];
+        draw_robot(qe);
+        iter = iter + 1;
+        pause(0.0001);
+    end
 end

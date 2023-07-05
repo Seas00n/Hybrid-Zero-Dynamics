@@ -131,6 +131,7 @@ for i = 1:total_impacts
         us = [us; u'];
     end
     times = [times; t];
+    i
 end
 disp('The torque squared cost is:');
 disp(trapz(times', sum(us.^2, 2)')/total_impacts);
